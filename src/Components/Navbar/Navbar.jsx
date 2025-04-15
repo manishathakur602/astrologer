@@ -5,7 +5,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full josefin-sans">
+    <header className="w-full josefin-sans ">
       <div className="bg-[#FFC003] py-2">
         {/* {/ Top banner /} */}
         <p className="text-center text-sm font-medium py-2">
@@ -20,8 +20,8 @@ function Navbar() {
         </div>
 
         {/* {/ Navigation bar /} */}
-        <nav className="bg-white shadow-md px-4 sm:px-6 md:px-8 py-4 relative">
-          <div className="flex items-center justify-between">
+        <nav className="bg-white shadow-md px-4 sm:px-6 md:px-8 py-4 relative ">
+          <div className="flex items-center justify-between ">
             {/* {/ Logo /} */}
             <a href="#" className="text-xl font-bold text-[#450B00]">
               LOGO
