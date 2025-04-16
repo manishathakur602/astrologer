@@ -7,7 +7,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 function ThirdSection() {
   return (
     <div className="bg-white">
-      <div className="md:flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+      <div className="md:flex flex-col md:flex-row items-center justify-between s md:space-y-0">
 
         {/* Left Image */}
         <div>
