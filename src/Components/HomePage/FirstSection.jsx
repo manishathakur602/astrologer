@@ -101,7 +101,7 @@ function FirstSection() {
             <PhoneCall size={18} /> Call Now
           </button>
         
-          <button onClick={handleChatNow} className="flex items-center justify-center gap-2 cursor-pointer bg-white text-black px-6 py-3 rounded-4xl ibarra-real-nova">
+          <button onClick={handleCallNow} className="flex items-center justify-center gap-2 cursor-pointer bg-white text-black px-6 py-3 rounded-4xl ibarra-real-nova">
             <MessageCircle size={18} /> Chat Now
           </button>
          

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FiMenu, FiX, FiPhone, FiMessageCircle } from 'react-icons/fi';
 import Logo from '../../assets/Images/ChatGPT Image Apr 15, 2025, 10_10_39 AM-Photoroom 1.png';
-import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
+// import logoSecond from '../../assets/Images/Frame.png';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,10 +24,13 @@ function Navbar() {
         </div>
 
         {/* Navigation bar */}
-        <nav className="px-4 sm:px-6 md:px-8 py-4 relative">
+        <nav className="px-4 sm:px-6 py-4 relative ">
           <div className="flex items-center justify-between">
             {/* Logo */}
+            <div className='flex gap-2'>
             <img src={Logo} alt=" " className="h-20 w-20" />
+            {/* <img src={logoSecond} alt=" " className="h-20 " /> */}
+            </div>
 
             {/* Desktop nav center items */}
             <div className="hidden lg:flex absolute lg:left-1/6 lg:-translate-x-1/15 xl:left-1/3 xl:-translate-x-1/4">
@@ -48,9 +51,12 @@ function Navbar() {
               <a href={`tel:${phoneNumber}`} className="bg-[#450B00] text-white px-6 py-2 rounded-full hover:bg-[#5c1307] transition flex items-center gap-2">
                 <FiPhone /> Call Now
               </a>
-              <a href={`https://wa.me/91${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-[#450B00] text-[#450B00] px-6 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
+              <a href={`tel:${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-white text-white px-6 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
                 <FiMessageCircle /> Chat Now
               </a>
+              {/* <a href={`https://wa.me/91${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-[#450B00] text-[#450B00] px-6 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
+                <FiMessageCircle /> Chat Now
+              </a> */}
             </div>
 
             {/* Hamburger menu (mobile only) */}

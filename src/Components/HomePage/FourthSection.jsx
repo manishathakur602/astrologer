@@ -92,13 +92,21 @@ function FourthSection() {
                 <div className="py-3">
                 <div className='flex'>
                 <a
-                    href="https://wa.me/9876259510"
+                    href="tel:+919876259510"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#FFC107] text-black px-7  py-1 rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-200 flex items-center gap-2"
                   >
                     <FiMessageCircle className="text-lg" /> Chat now
                   </a>
+                {/* <a
+                    href="https://wa.me/9876259510"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#FFC107] text-black px-7  py-1 rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-200 flex items-center gap-2"
+                  >
+                    <FiMessageCircle className="text-lg" /> Chat now
+                  </a> */}
                 </div>
                 </div>
               </div>
@@ -109,5 +117,6 @@ function FourthSection() {
     </div>
   );
 }
+
 
 export default FourthSection;

@@ -41,7 +41,7 @@ function ThirdChunk({ name1, name2, para, features = defaultFeatures }) {
         ))}
       </div>
       <a
-  href="https://wa.me/9876259510"
+ href="tel:+919876259510"
   target="_blank"
   rel="noopener noreferrer"
   className="bg-black cursor-pointer rounded-md px-6 py-1 mt-10 text-white flex gap-2 items-center justify-center hover:bg-gray-800 transition"
@@ -49,6 +49,15 @@ function ThirdChunk({ name1, name2, para, features = defaultFeatures }) {
   <IoChatbubblesOutline className="text-lg" />
   Chat Now
 </a>
+      {/* <a
+  href="https://wa.me/9876259510"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-black cursor-pointer rounded-md px-6 py-1 mt-10 text-white flex gap-2 items-center justify-center hover:bg-gray-800 transition"
+>
+  <IoChatbubblesOutline className="text-lg" />
+  Chat Now
+</a> */}
 
     </div>
   );
