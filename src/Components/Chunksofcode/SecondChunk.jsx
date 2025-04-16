@@ -3,7 +3,7 @@ import { IoChatbubblesOutline } from "react-icons/io5";
 
 function SecondChunk({name1,name2, name3,para}) {
   return (
-    <section className="  py-3 bg-white">
+    <section className="  py-3 bg-white ibarra-real-nova">
    <div className="max-w-xl w-full mx-auto flex flex-col space-y-4 md:space-y-5">
 
         <h1 className="text-3xl font-bold lg:text-6xl ">{name1}</h1>
@@ -13,10 +13,17 @@ function SecondChunk({name1,name2, name3,para}) {
          {para}
         </p>
         <div>
-        <button className="bg-black rounded-md px-6 py-1 text-white flex gap-2 item-center justify-center hover:bg-gray-800 transition">
+              <a
+        href="https://wa.me/9876259510"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-black rounded-md px-6 py-1  text-white flex gap-2 items-center justify-center hover:bg-gray-800 transition"
+      >
         <IoChatbubblesOutline className="text-lg" />
-          Chat Now
-        </button>
+        Chat Now
+      </a>
+
+        
         </div>
       </div>
     </section>

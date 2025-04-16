@@ -5,7 +5,7 @@ import SecondChunk from '../Chunksofcode/SecondChunk';
 import image3 from '../../assets/Images/1c5cd556-29f8-4651-b42e-c97d8919b4ac 1.png';
 function FifthSection() {
   return (
-    <div className=' px-5 md:px-10 py-4 md:py-10 md:flex justify-center items-center gap-20'>
+    <div className=' px-5 md:px-10 py-4 md:py-10 md:flex justify-center items-center gap-20' id='test3'>
 
             <div className='max-w-sm'>
                 <img src={image} alt='' />

@@ -12,7 +12,7 @@ function SixthSection() {
   ];
 
   return (
-    <div className="py-16 bg-[#390C05]">
+    <div className="py-16 bg-[#390C05] ibarra-real-nova">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat, index) => (

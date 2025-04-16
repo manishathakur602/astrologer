@@ -62,11 +62,11 @@ function FourthSection() {
       <div className="relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 px-4 bg-opacity-60 rounded-xl py-8">
-          <h2 className="text-3xl font-bold text-[#FFC107]">Services</h2>
-          <h1 className="text-6xl font-semibold text-white mt-2">
-            Our Awesome <span className="text-[#FFC107]">Services</span>
+          <h2 className="text-3xl font-bold text-[#FFC107] ibarra-real-nova">Services</h2>
+          <h1 className="text-6xl font-semibold text-white mt-2 ibarra-real-nova">
+            Our Awesome <span className="text-[#FFC107] ">Services</span>
           </h1>
-          <p className="text-white mt-4 text-lg">
+          <p className="text-white mt-4 text-lg ibarra-real-nova">
             One of our astrological advice can change the condition and direction of your life.
             So don't think and call now to get a solution to all your problems.
           </p>
@@ -78,7 +78,7 @@ function FourthSection() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="rounded-2xl border-2 p-3 border-black shadow-2xl bg-white flex flex-col justify-between"
+                className="rounded-2xl border-2 p-3 border-black shadow-2xl bg-white flex flex-col justify-between ibarra-real-nova"
               >
                 <img
                   src={service.image}
@@ -86,13 +86,20 @@ function FourthSection() {
                   className="w-full h-80 object-cover rounded-t-2xl"
                 />
                 <div className="py-5 flex-grow">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2 ">{service.title}</h3>
                   <p className="text-black text-sm">{service.description}</p>
                 </div>
                 <div className="py-3">
-                  <button className="bg-[#FFC107] text-black px-7 py-1 rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-200 flex items-center gap-2">
-                  <FiMessageCircle className="text-lg" /> Chat now 
-                  </button>
+                <div className='flex'>
+                <a
+                    href="https://wa.me/9876259510"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#FFC107] text-black px-7  py-1 rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-200 flex items-center gap-2"
+                  >
+                    <FiMessageCircle className="text-lg" /> Chat now
+                  </a>
+                </div>
                 </div>
               </div>
             ))}

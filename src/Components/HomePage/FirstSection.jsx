@@ -40,6 +40,19 @@ function highlightKeyword(text, keyword) {
   );
 }
 
+
+const phoneNumber = '+91 9876259510'; // Replace with your number
+  const whatsappNumber = '9876259510'; // No '+' sign for WhatsApp
+
+  const handleChatNow = () => {
+    window.open(`https://wa.me/${whatsappNumber}`, '_blank');
+  };
+
+  const handleCallNow = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+
 function FirstSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
@@ -59,6 +72,7 @@ function FirstSection() {
   const currentCard = cardData[currentIndex];
 
   return (
+    <div id="test1" className=" bg-danger">
     <div className="relative w-full h-screen bg-black overflow-hidden">
       {/* Background Image */}
       <img
@@ -75,21 +89,25 @@ function FirstSection() {
           fade ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
       >
-        <h2 className="text-4xl font-bold mb-4">
+        <h2 className="text-4xl font-bold mb-4 ibarra-real-nova">
           {highlightKeyword(currentCard.title, currentCard.highlight)}
         </h2>
-        <p className="max-w-3xl text-base sm:text-lg mb-6">
+        <p className="max-w-3xl text-base sm:text-lg mb-6 ibarra-real-nova">
           {currentCard.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="flex items-center justify-center gap-2 bg-[#FFC107] text-black px-6 py-3 rounded-4xl">
+         
+         <button onClick={handleCallNow} className="flex items-center justify-center gap-2 cursor-pointer bg-[#FFC107] text-black px-6 py-3 rounded-4xl ibarra-real-nova">
             <PhoneCall size={18} /> Call Now
           </button>
-          <button className="flex items-center justify-center gap-2 bg-white text-black px-6 py-3 rounded-4xl">
+        
+          <button onClick={handleChatNow} className="flex items-center justify-center gap-2 cursor-pointer bg-white text-black px-6 py-3 rounded-4xl ibarra-real-nova">
             <MessageCircle size={18} /> Chat Now
           </button>
+         
         </div>
       </div>
+    </div>
     </div>
   );
 }
