@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import Ellipse61 from '../../assets/Images/Ellipse 61.png';
 import Ellipse62 from '../../assets/Images/Ellipse 62.png';
 import Ellipse63 from '../../assets/Images/Ellipse 63.png';
@@ -43,70 +43,87 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
-  const itemsPerPage = 3;
-  const totalPages = Math.ceil(testimonials.length / itemsPerPage);
-  const [pageIndex, setPageIndex] = useState(0);
+  const [cardsToShow, setCardsToShow] = useState(1);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextPage = () => {
-    setPageIndex((prev) => (prev + 1) % totalPages);
+  // Set responsive card count
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      const width = window.innerWidth;
+      if (width < 640) {
+        setCardsToShow(1);
+      } else if (width < 1024) {
+        setCardsToShow(2);
+      } else {
+        setCardsToShow(3);
+      }
+    };
+
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+    return () => window.removeEventListener("resize", updateCardsToShow);
+  }, []);
+
+  const totalSlides = Math.ceil(testimonials.length / cardsToShow);
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
   };
 
-  const paginatedTestimonials = testimonials.slice(
-    pageIndex * itemsPerPage,
-    pageIndex * itemsPerPage + itemsPerPage
-  );
+  const getVisibleTestimonials = () => {
+    const start = currentIndex * cardsToShow;
+    return testimonials.slice(start, start + cardsToShow);
+  };
 
   return (
-    <section className="bg-gradient-to-br from-[#fff6e5] to-white py-20 px-4 ibarra-real-nova" id='test6'>
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-lg text-[#FFC107] mb-2 tracking-widest font-semibold">Testimonials</h2>
-        <h1 className="text-4xl md:text-6xl text-black mb-6 leading-tight">
+    <div className="w-full max-w-6xl mx-auto p-4 ibarra-real-nova">
+      <div className="relative overflow-hidden">
+        <h2 className="text-lg text-[#FFC107] mb-2 tracking-widest font-semibold text-center">
+          Testimonials
+        </h2>
+        <h1 className="text-4xl md:text-6xl text-black mb-6 leading-tight text-center">
           What Our Clients <span className="text-[#FFC107]">Say's</span>
         </h1>
-        <p className="text-gray-700 mb-14 max-w-2xl mx-auto text-lg">
-          Astrologer Kinaram Baba Ji has transformed the lives of over <strong>98,000+</strong> clients with his spiritual insight and powerful remedies.
+        <p className="text-gray-700 mb-14 max-w-2xl mx-auto text-lg text-center">
+          Astrologer Kinaram Baba Ji has transformed the lives of over{" "}
+          <strong>98,000+</strong> clients with his spiritual insight and
+          powerful remedies.
         </p>
 
-        {/* Carousel Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {paginatedTestimonials.map((testimonial, index) => (
+        <div className="flex flex-wrap justify-center gap-4 transition-all duration-500">
+          {getVisibleTestimonials().map((testimonial, index) => (
             <div
               key={index}
-              onClick={nextPage}
-              className="bg-[#390C05] cursor-pointer backdrop-blur-lg border border-[#FFC107]/30 rounded-3xl shadow-lg p-8 transition-transform transform hover:scale-105 hover:shadow-2xl duration-300"
+              className="w-full sm:w-[48%] lg:w-[32%] bg-[#390C05] text-white shadow-lg rounded-xl p-6 flex flex-col items-center justify-center text-center space-y-4"
             >
-              <div className="flex justify-center mb-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-20 h-20 rounded-full object-cover ring-2 ring-white"
-                />
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="w-20 h-20 rounded-full object-cover border-4 border-gray-300"
+              />
+              <p className="">"{testimonial.feedback}"</p>
+              <div>
+                <p className="font-semibold">{testimonial.name}</p>
+                <p className="text-sm">{testimonial.location}</p>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-1">{testimonial.name}</h3>
-              <p className="text-sm text-white font-medium mb-4">{testimonial.location}</p>
-              <p className="text-white text-sm leading-relaxed">
-                “{testimonial.feedback}”
-              </p>
             </div>
           ))}
         </div>
 
-        {/* Dots for Navigation */}
-        <div className="mt-12 flex justify-center flex-wrap gap-3">
-          {Array.from({ length: totalPages }).map((_, index) => (
-            <div
+        {/* Dots */}
+        <div className="flex justify-center mt-6 space-x-2">
+          {Array.from({ length: totalSlides }).map((_, index) => (
+            <button
               key={index}
-              onClick={() => setPageIndex(index)}
-              className={`w-4 h-4 rounded-full cursor-pointer transition-all duration-300 transform ${
-                index === pageIndex
-                  ? 'bg-[#390C05] scale-125 ring-2 ring-[#FFC107]'
-                  : 'bg-gray-300'
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-colors cursor-pointer duration-300 ${
+                index === currentIndex ? "bg-black" : "bg-gray-400"
               }`}
-            />
+            ></button>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
