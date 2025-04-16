@@ -16,7 +16,7 @@ const defaultFeatures = [
 
 function ThirdChunk({ name1, name2, para, features = defaultFeatures }) {
   return (
-    <div className='max-w-xl p-4 ibarra-real-nova'>
+    <div className='max-w-sm ibarra-real-nova '>
       <h3 className='text-lg font-semibold text-gray-600'>{name1}</h3>
       <h1 className='text-3xl font-bold text-[#390C05] mb-2'>{name2}</h1>
       <p className='text-gray-700 mb-6'>{para}</p>
