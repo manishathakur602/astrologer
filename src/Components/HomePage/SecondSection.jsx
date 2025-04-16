@@ -29,7 +29,7 @@ function SecondSection() {
   ];
 
   return (
-    <div className="bg-[#FFC107] py-10">
+    <div className="bg-[#FFC107] py-10" id="test2">
       <div className="text-center mb-8">
         <h3 className="text-lg font-medium text-[#390C05] ibarra-real-nova">Astrology</h3>
         <h1 className="text-3xl font-bold text-white ibarra-real-nova">

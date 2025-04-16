@@ -72,6 +72,7 @@ function FirstSection() {
   const currentCard = cardData[currentIndex];
 
   return (
+    <div id="test1" className=" bg-danger">
     <div className="relative w-full h-screen bg-black overflow-hidden">
       {/* Background Image */}
       <img
@@ -106,6 +107,7 @@ function FirstSection() {
          
         </div>
       </div>
+    </div>
     </div>
   );
 }

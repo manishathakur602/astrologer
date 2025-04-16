@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
   );
 
   return (
-    <section className="bg-gradient-to-br from-[#fff6e5] to-white py-20 px-4 ibarra-real-nova">
+    <section className="bg-gradient-to-br from-[#fff6e5] to-white py-20 px-4 ibarra-real-nova" id='test6'>
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-lg text-[#FFC107] mb-2 tracking-widest font-semibold">Testimonials</h2>
         <h1 className="text-4xl md:text-6xl text-black mb-6 leading-tight">
