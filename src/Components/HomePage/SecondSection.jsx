@@ -37,12 +37,12 @@ function SecondSection() {
         </h1>
       </div>
 
-      <div className="">
-        <div className="flex flex-col md:flex-row justify-center gap-6 px-4 ">
+      <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
           {obj.map((item, index) => (
             <div
               key={index}
-              className="flex-shrink-0 flex flex-col justify-center hover:scale-105 transition duration-150 items-center space-y-3 py-6 px-6 md:px-10 rounded-lg w-full md:w-72 bg-[#390C05] text-white shadow-lg"
+              className="flex flex-col justify-center hover:scale-105 transition duration-150 items-center space-y-3 py-6 px-6 md:px-10 rounded-lg w-full bg-[#390C05] text-white shadow-lg"
             >
               <div className="p-4 bg-white rounded-full shadow-md">
                 <img src={item.logo} alt={item.heading} className="w-16 h-16" />

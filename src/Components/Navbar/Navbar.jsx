@@ -30,8 +30,8 @@ function Navbar() {
             <img src={Logo} alt=" " className="h-20 w-20" />
 
             {/* Desktop nav center items */}
-            <div className="hidden lg:flex absolute lg:left-1/6 lg:-translate-x-1/12 xl:left-1/2 xl:-translate-x-1/2">
-              <ul className="flex gap-8 md:gap-8 text-[#450B00] font-medium">
+            <div className="hidden lg:flex absolute lg:left-1/6 lg:-translate-x-1/15 xl:left-1/3 xl:-translate-x-1/4">
+              <ul className="flex gap-8 md:gap-5 xl:gap-10 text-[#450B00] font-medium">
                 <Link  to="test1" spy={true} smooth={true} offset={-100} duration={200} className="cursor-pointer"><li>Home</li></Link>
                 <Link  to="test2" spy={true} smooth={true} offset={-100} duration={300} className="cursor-pointer"><li>Services</li></Link>
                 <Link  to="test3" spy={true} smooth={true} offset={-100} duration={400} className="cursor-pointer"><li>About Us</li></Link>
