@@ -39,7 +39,7 @@ function EighthSection() {
   ];
 
   return (
-    <div className="py-10 bg-[#FFC107]">
+    <div className="py-10 bg-[#FFC107] ibarra-real-nova">
       <div className="max-w-5xl mx-auto px-4 text-center">
         <h1 className="text-xl  text-white">Services</h1>
         <p className="text-white text-5xl mt-2 mb-10">Other   <span className="text-black">Services</span> </p>
@@ -72,9 +72,15 @@ function EighthSection() {
               </ul>
 
               {/* Button */}
-              <button className="bg-[#FFC107] text-black px-6 py-1 rounded-md cursor-pointer">
-                Chat Now
-              </button>
+              <a
+  href="https://wa.me/9876259510"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#FFC107] text-black px-6 py-1 rounded-md cursor-pointer hover:bg-yellow-400 transition"
+>
+  Chat Now
+</a>
+
             </div>
           ))}
         </div>

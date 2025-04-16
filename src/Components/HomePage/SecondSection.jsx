@@ -31,9 +31,9 @@ function SecondSection() {
   return (
     <div className="bg-[#FFC107] py-10">
       <div className="text-center mb-8">
-        <h3 className="text-lg font-medium text-[#390C05]">Astrology</h3>
-        <h1 className="text-3xl font-bold text-white">
-          Our Awesome <span className="text-[#390C05]">Services</span>
+        <h3 className="text-lg font-medium text-[#390C05] ibarra-real-nova">Astrology</h3>
+        <h1 className="text-3xl font-bold text-white ibarra-real-nova">
+          Our Awesome <span className="text-[#390C05] ibarra-real-nova">Services</span>
         </h1>
       </div>
 
@@ -47,10 +47,10 @@ function SecondSection() {
               <div className="p-4 bg-white rounded-full shadow-md">
                 <img src={item.logo} alt={item.heading} className="w-16 h-16" />
               </div>
-              <h2 className="text-xl font-semibold text-center">
+              <h2 className="text-xl font-semibold text-center ibarra-real-nova">
                 {item.heading}
               </h2>
-              <p className="text-center text-sm">{item.para}</p>
+              <p className="text-center text-sm ibarra-real-nova">{item.para}</p>
             </div>
           ))}
         </div>

@@ -4,7 +4,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 function FirstChunk() {
   return (
-    <div className="flex">
+    <div className="flex ibarra-real-nova">
       <div className="bg-[#390C05] text-white max-w-sm w-full p-6 flex flex-col items-center text-center  rounded-b-2xl">
         <h1 className="text-2xl font-bold text-[#FFC107]">Astrologer Solution</h1>
         <img src={image3} alt="Astrologer" className="w-full h-auto   object-cover rounded-full" />
