@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../../assets/Images/ChatGPT Image Apr 15, 2025, 10_10_39 AM-Photoroom 1.png';
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
         
         {/* Logo Section */}
         <div className="flex flex-col items-start text-left">
-          <h1 className="text-6xl text-[#450B00] mb-4">Logo</h1>
+        <img src={Logo} alt="Logo" className='h-20 ml-20' />
           <p className="text-lg text-[#450B00]">Shiv Aghori Baba Ji is a well-known astrologer who encourages people to use astrology for good purposes.</p>
         </div>
 
