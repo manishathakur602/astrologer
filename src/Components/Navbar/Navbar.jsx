@@ -51,12 +51,12 @@ function Navbar() {
               <a href={`tel:${phoneNumber}`} className="bg-[#450B00] text-white px-6 py-2 rounded-full hover:bg-[#5c1307] transition flex items-center gap-2">
                 <FiPhone /> Call Now
               </a>
-              <a href={`tel:${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-white text-white px-6 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
-                <FiMessageCircle /> Chat Now
-              </a>
-              {/* <a href={`https://wa.me/91${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-[#450B00] text-[#450B00] px-6 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
+              {/* <a href={`tel:${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-white text-white px-6 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
                 <FiMessageCircle /> Chat Now
               </a> */}
+              <a href={`https://wa.me/91${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-[#450B00] text-[#450B00] px-6 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
+                <FiMessageCircle /> Chat Now
+              </a>
             </div>
 
             {/* Hamburger menu (mobile only) */}
@@ -95,12 +95,12 @@ function Navbar() {
                 <a href={`tel:${phoneNumber}`} className="bg-[#450B00] text-white px-4 py-2 rounded-full hover:bg-[#5c1307] transition flex items-center gap-2">
                   <FiPhone /> Call Now
                 </a>
-                <a href={`tel:${phoneNumber}`}  target="_blank" rel="noopener noreferrer" className="border border-[#450B00] text-[#450B00] px-4 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
-                  <FiMessageCircle /> Chat Now
-                </a>
-                {/* <a href={`https://wa.me/91${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-[#450B00] text-[#450B00] px-4 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
+                {/* <a href={`tel:${phoneNumber}`}  target="_blank" rel="noopener noreferrer" className="border border-[#450B00] text-[#450B00] px-4 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
                   <FiMessageCircle /> Chat Now
                 </a> */}
+                <a href={`https://wa.me/91${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="border border-[#450B00] text-[#450B00] px-4 py-2 rounded-full hover:bg-[#450B00] hover:text-white transition flex items-center gap-2">
+                  <FiMessageCircle /> Chat Now
+                </a>
               </div>
             </div>
           )}
