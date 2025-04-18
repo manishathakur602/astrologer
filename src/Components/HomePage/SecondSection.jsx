@@ -8,28 +8,32 @@ function SecondSection() {
   const obj = [
     {
       logo: logo1,
-      heading: "27+ Years of Trusted Astrology Expertise",
+      heading: "27+ Years of Trusted ",
+      word: " Astrology Expertise",
       para: `With over 27 years of experience in astrology, Astrologer Kinaram Baba Ji has
            solved thousands of love, relationship, marriage, and life problems. Known for
           accurate readings and quick results, he is a top-rated love problem expert in India`
     },
     {
       logo: logo2,
-      heading: "98,000+ Happy & Loyal Clients",
+      heading: "98,000+ Happy & Loyal",
+      word:" Clients",
       para: `Kinaram Baba Ji has successfully helped more than 98,000 clients with trusted
      astrology services. His high success rate and powerful solutions make him one of
      the most reliable astrologers in the country`
     },
     {
       logo: logo3,
-      heading: "Global Astrology Support – Worldwide Clients",
+      heading: "Global Astrology Support – ",
+      word:" Worldwide Clients",
       para: `Clients from the USA, UK, Canada, Australia, and more trust his astrological
       remedies. From love issues to business problems, he offers online astrology
       consultation that works anywhere`
     },
     {
       logo: logo4,
-      heading: "100% Effective & Fast Results",
+      heading: "100% Effective & Fast ",
+      word:"Results",
       para: `Get 100% working solutions for love marriage, husband-wife disputes, family
       issues, and more. All remedies are personalized and result-driven to solve
       problems fast and safely`
@@ -56,7 +60,7 @@ function SecondSection() {
                 <img src={item.logo} alt={item.heading} className="w-16 h-16" />
               </div>
               <h2 className="text-xl font-semibold text-center ibarra-real-nova">
-                {item.heading}
+                {item.heading} <span className="text-[#FFC107]">{item.word}</span>
               </h2>
               <p className="text-center text-sm ibarra-real-nova">{item.para}</p>
             </div>
