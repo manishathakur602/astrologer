@@ -86,7 +86,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-4 ibarra-real-nova">
+    <div className="w-full max-w-6xl mx-auto p-4 ibarra-real-nova" id="test6">
       <div className="relative overflow-hidden">
         <h2 className="text-lg text-[#FFC107] mb-2 tracking-widest font-semibold text-center">
           Testimonials
