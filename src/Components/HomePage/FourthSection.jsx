@@ -13,37 +13,44 @@ function FourthSection() {
       title: 'Love Problem Solution',
       image: image8,
       description:
-        'Two Individuals Those Who Are In Love Always Want To Marry Each Other And Such Kind Of The Marriage Is Known As Love Marriage. Love Marriage Is The Marriage In Which There Come So Many Problems Before Love Marriage. Get instant solution to call now.',
+        `Facing issues in love life? Get expert astrological solutions to resolve breakups,
+         misunderstandings, or one-sided love. Bring peace and happiness back into your
+        relationship`
     },
     {
-      title: 'Love Marriage Specialist',
+      title: 'Marriage Compatibility Check',
       image: image9,
       description:
-        'Two Individuals Those Who Are In Love Always Want To Marry Each Other And Such Kind Of The Marriage Is Known As Love Marriage. Love Marriage Is The Marriage In Which There Come So Many Problems Before Love Marriage. Get instant solution to call now.',
+        `Ensure a happy married life with accurate kundli matching. Check compatibility,
+       doshas, and planetary effects before marriage with expert guidance`
     },
     {
-      title: 'Husband Wife Dispute',
+      title: 'Husband-Wife Dispute Solution',
       image: image8,
       description:
-        'Two Individuals Those Who Are In Love Always Want To Marry Each Other And Such Kind Of The Marriage Is Known As Love Marriage. Love Marriage Is The Marriage In Which There Come So Many Problems Before Love Marriage. Get instant solution to call now.',
+        `Solve husband-wife fights, trust issues, and family interference with powerful
+        astrology remedies. Restore peace and love in your marriage`
     },
     {
-      title: 'Love Marriage Specialist',
+      title: 'Lost Love Back',
       image: image4,
       description:
-        'Two Individuals Those Who Are In Love Always Want To Marry Each Other And Such Kind Of The Marriage Is Known As Love Marriage. Love Marriage Is The Marriage In Which There Come So Many Problems Before Love Marriage. Get instant solution to call now.',
+        `Want your ex back? Use proven Vashikaran and love astrology methods to
+        reconnect and rebuild your relationship stronger than before`
     },
     {
-      title: 'Love Marriage Specialist',
+      title: 'Career and Business Problems',
       image: image5,
       description:
-        'Two Individuals Those Who Are In Love Always Want To Marry Each Other And Such Kind Of The Marriage Is Known As Love Marriage. Love Marriage Is The Marriage In Which There Come So Many Problems Before Love Marriage. Get instant solution to call now.',
+        `Facing career blocks or business loss? Get astrological insights and remedies to
+        boost success, growth, and financial stability`
     },
     {
-      title: 'Love Marriage Specialist',
+      title: 'Health & Wellness Remedies',
       image: image6,
       description:
-        'Two Individuals Those Who Are In Love Always Want To Marry Each Other And Such Kind Of The Marriage Is Known As Love Marriage. Love Marriage Is The Marriage In Which There Come So Many Problems Before Love Marriage. Get instant solution to call now.',
+        `Discover the root cause of health issues through astrology. Get customized
+       solutions to improve your physical and mental well-being`
     },
   ];
 
@@ -92,13 +99,21 @@ function FourthSection() {
                 <div className="py-3">
                 <div className='flex'>
                 <a
-                    href="https://wa.me/9876259510"
+                    href="tel:+919876259510"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#FFC107] text-black px-7  py-1 rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-200 flex items-center gap-2"
                   >
                     <FiMessageCircle className="text-lg" /> Chat now
                   </a>
+                {/* <a
+                    href="https://wa.me/9876259510"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#FFC107] text-black px-7  py-1 rounded-2xl cursor-pointer hover:scale-105 transition-transform duration-200 flex items-center gap-2"
+                  >
+                    <FiMessageCircle className="text-lg" /> Chat now
+                  </a> */}
                 </div>
                 </div>
               </div>
@@ -109,5 +124,6 @@ function FourthSection() {
     </div>
   );
 }
+
 
 export default FourthSection;

@@ -7,24 +7,31 @@ import { PhoneCall, MessageCircle } from 'lucide-react';
 const cardData = [
   {
     img: image1,
-    title: 'Love Problem Solution Expert',
+    title: 'Fix Love & Marriage Problems with Astrology',
     highlight: 'Expert',
-    description:
-      'Wedding Problems, Desired Love, Family Problems, Marriage Problems, Husband-Wife Problems, Extra Affair Problems, Foreign Trip Problems, Love Breakup Problems, Love Marriage, Business Problems, Money Problems',
+    description: `Facing problems in love or marriage? Don’t let anger and misunderstandings break
+your relationship. Get powerful astrology solutions for love marriage issues,
+husband-wife fights, family problems, and more. Bring peace and love back with
+expert guidance that really works`    
   },
   {
     img: image2,
-    title: 'Husband Wife Dispute Solution',
+    title: 'Expert in Solving Love Life Issues',
     highlight: 'Solution',
     description:
-      'Wedding Problems, Desired Love, Family Problems, Marriage Problems, Husband-Wife Problems, Extra Affair Problems, Foreign Trip Problems, Love Breakup Problems, Love Marriage, Business Problems, Money Problems',
+      `Is your love life going through problems? Whether it’s misunderstandings,
+breakup, or extra affairs, our expert gives simple astrology solutions to fix your
+relationship. Get help to bring back trust, love, and happiness in your life`
   },
   {
     img: image3,
-    title: 'Love Marriage Specialist',
+    title: 'Expert in Solving Love Life Issues',
     highlight: 'Specialist',
     description:
-      'Wedding Problems, Desired Love, Family Problems, Marriage Problems, Husband-Wife Problems, Extra Affair Problems, Foreign Trip Problems, Love Breakup Problems, Love Marriage, Business Problems, Money Problems',
+     `Is your love life going through problems? Whether it’s misunderstandings,
+breakup, or extra affairs, our expert gives simple astrology solutions to fix your
+relationship. Get help to bring back trust, love, and happiness in your life.
+`
   },
 ];
 
@@ -101,7 +108,7 @@ function FirstSection() {
             <PhoneCall size={18} /> Call Now
           </button>
         
-          <button onClick={handleChatNow} className="flex items-center justify-center gap-2 cursor-pointer bg-white text-black px-6 py-3 rounded-4xl ibarra-real-nova">
+          <button onClick={handleCallNow} className="flex items-center justify-center gap-2 cursor-pointer bg-white text-black px-6 py-3 rounded-4xl ibarra-real-nova">
             <MessageCircle size={18} /> Chat Now
           </button>
          

@@ -73,13 +73,21 @@ function EighthSection() {
 
               {/* Button */}
               <a
-  href="https://wa.me/9876259510"
+href="tel:+919876259510"
   target="_blank"
   rel="noopener noreferrer"
   className="bg-[#FFC107] text-black px-6 py-1 rounded-md cursor-pointer hover:bg-yellow-400 transition"
 >
   Chat Now
 </a>
+              {/* <a
+  href="https://wa.me/9876259510"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#FFC107] text-black px-6 py-1 rounded-md cursor-pointer hover:bg-yellow-400 transition"
+>
+  Chat Now
+</a> */}
 
             </div>
           ))}

@@ -7,7 +7,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 function ThirdSection() {
   return (
     <div className="bg-white">
-      <div className="md:flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+      <div className="md:flex flex-col md:flex-row items-center justify-between s md:space-y-0">
 
         {/* Left Image */}
         <div>
@@ -20,15 +20,15 @@ function ThirdSection() {
 
         {/* Center Content */}
         <div className="bg-[#390C05] text-white p-6 flex h-full flex-col justify-center items-center space-y-2">
-          <h1 className="text-2xl font-bold text-[#FFC107] lg:text-3xl ibarra-real-nova">Astrology Solution</h1>
+          <h1 className="text-2xl text-center font-bold text-[#FFC107] lg:text-3xl ibarra-real-nova">Astrology Solutions by Shiv Aghori Baba Ji</h1>
           <img src={image3} alt="Decorative" className="w-full h-auto" />
-          <p className='text-sm lg:text-lg ibarra-real-nova'>Solve Your All Problem With the Help Of</p>
+          <p className='text-sm lg:text-xl ibarra-real-nova'>Struggling with love, marriage, or relationship issues?</p>
           <h2 className="text-xl font-semibold md:text-3xl text-[#FFC107] ibarra-real-nova">Shiv Aghori baba ji</h2>
-          <p className='text-sm lg:text-xl text-center ibarra-real-nova'>Get Quick Solutions Of your Problems with The Help Of Effective Remedies!</p>
+          <p className='text-sm lg:text-xl text-center ibarra-real-nova'>Get quick and effective remedies from India's trusted astrologer.</p>
           <img src={image3} alt="Decorative" className="w-full h-auto" />
           <a href="tel:+919876259510" className="flex items-center gap-2 text-[#FFC107] pt-2">
             <BsFillTelephoneFill className='text-sm md:text-2xl' />
-            <p className="font-medium md:text-xl ibarra-real-nova">+91 9876259510</p>
+            <p className="font-medium md:text-3xl ibarra-real-nova">+91 9876259510</p>
           </a>
         </div>
 

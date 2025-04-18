@@ -8,23 +8,31 @@ function SecondSection() {
   const obj = [
     {
       logo: logo1,
-      heading: "27+ YEARS EXPERIENCE",
-      para: "Over 27 years of experience in the field of astrology. Able to solve love, relationship problems and other issues in life.",
+      heading: "27+ Years of Trusted Astrology Expertise",
+      para: `With over 27 years of experience in astrology, Astrologer Kinaram Baba Ji has
+           solved thousands of love, relationship, marriage, and life problems. Known for
+          accurate readings and quick results, he is a top-rated love problem expert in India`
     },
     {
       logo: logo2,
-      heading: "98000+ TRUSTED CLIENTS",
-      para: "Kinaram Baba Ji has been a renowned astrologer due to his successful track record of handling 98,000+ loyal customers.",
+      heading: "98,000+ Happy & Loyal Clients",
+      para: `Kinaram Baba Ji has successfully helped more than 98,000 clients with trusted
+     astrology services. His high success rate and powerful solutions make him one of
+     the most reliable astrologers in the country`
     },
     {
       logo: logo3,
-      heading: "WORLD WIDE CLIENTS",
-      para: "Astrologer Kinaram Baba Ji has his own astrology center in India, he provides his astrology solutions to people all over the world.",
+      heading: "Global Astrology Support – Worldwide Clients",
+      para: `Clients from the USA, UK, Canada, Australia, and more trust his astrological
+      remedies. From love issues to business problems, he offers online astrology
+      consultation that works anywhere`
     },
     {
       logo: logo4,
-      heading: "100% EFFECTIVE SOLUTION",
-      para: "Whatever the issue, you will find a 100% workable solution here. Seek advice right away to resolve your problems quickly.",
+      heading: "100% Effective & Fast Results",
+      para: `Get 100% working solutions for love marriage, husband-wife disputes, family
+      issues, and more. All remedies are personalized and result-driven to solve
+      problems fast and safely`
     },
   ];
 

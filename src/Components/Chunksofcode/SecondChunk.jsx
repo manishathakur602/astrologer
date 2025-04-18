@@ -13,8 +13,8 @@ function SecondChunk({name1,name2, name3,para}) {
          {para}
         </p>
         <div>
-              <a
-        href="https://wa.me/9876259510"
+        <a
+        href="tel:+919876259510"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-black rounded-md px-6 py-1  text-white flex gap-2 items-center justify-center hover:bg-gray-800 transition"
@@ -22,6 +22,15 @@ function SecondChunk({name1,name2, name3,para}) {
         <IoChatbubblesOutline className="text-lg" />
         Chat Now
       </a>
+              {/* <a
+        href="https://wa.me/9876259510"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-black rounded-md px-6 py-1  text-white flex gap-2 items-center justify-center hover:bg-gray-800 transition"
+      >
+        <IoChatbubblesOutline className="text-lg" />
+        Chat Now
+      </a> */}
 
         
         </div>

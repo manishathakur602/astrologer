@@ -1,112 +1,139 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import Ellipse61 from '../../assets/Images/Ellipse 61.png';
 import Ellipse62 from '../../assets/Images/Ellipse 62.png';
 import Ellipse63 from '../../assets/Images/Ellipse 63.png';
 
 const testimonials = [
   {
-    name: "Shaipali Singh",
+    name: "sanjana kumari",
     location: "Delhi - (India)",
-    feedback: "We were childless and we decided to meet Kinaram Baba Ji. He brought hope into our lives and now we’re blessed with twins. Thank you!",
+    feedback: `I was going through a tough time in my relationship, filled with
+       misunderstandings and constant fights. After consulting Shiv Aghori Baba Ji, I
+      saw a remarkable change. His astrology remedies brought peace back into my
+      love life, and now my partner and I are happier than ever. Thank you for your
+      guidance`,
     image: Ellipse61,
   },
   {
-    name: "Ravi Sharma",
-    location: "Delhi - (India)",
-    feedback: "We had family disputes that felt impossible to resolve, but Baba Ji gave us remedies that restored peace in our home.",
-    image: Ellipse62,
-  },
-  {
-    name: "Priya Mehta",
-    location: "Delhi - (India)",
-    feedback: "We were facing constant health problems. After Baba Ji’s guidance, things changed drastically for the better.",
-    image: Ellipse63,
-  },
-  {
-    name: "Rohit Verma",
+    name: "Rajesh & Neha M.",
     location: "Mumbai - (India)",
-    feedback: "My business was sinking, and I had lost all hope. Baba Ji’s advice turned things around. Forever grateful!",
+    feedback: `"We were about to get married, but we wanted to be sure about our compatibility.
+    After a detailed kundli matching with Baba Ji, we felt more confident and secure
+    about our decision. His insights gave us clarity and helped us prepare for a happy
+    married life. We highly recommend his services`,
     image: Ellipse62,
   },
   {
-    name: "Anita Desai",
-    location: "Lucknow - (India)",
-    feedback: "Marriage issues were eating us up. Baba Ji’s remedies worked wonders and brought us closer again.",
+    name: "Sanjay K",
+    location: "Bangalore) - (India)",
+    feedback: `I was facing a major career block, and my business was not doing well. Baba Ji’s
+    astrological guidance provided me with remedies that not only helped me regain
+    confidence but also turned my business around. I’m now experiencing steady
+    growth and success. Truly grateful for his help`,
     image: Ellipse63,
   },
   {
-    name: "Jatin Bhardwaj",
-    location: "Chandigarh - (India)",
-    feedback: "We were trying to conceive for years. After meeting Baba Ji, our prayers were answered.",
+    name: "Anjali R",
+    location: "Jaipur - (India)",
+    feedback: `My marriage was on the edge due to constant arguments and lack of understanding. I reached out to Shiv Aghori Baba Ji as a last hope. His simple yet powerful remedies helped restore peace and love in our relationship. Today, my husband and I share a stronger bond than ever before. He truly saved my marriage`,
+    image: Ellipse62,
+  },
+  {
+    name: " Vikram T",
+    location: "Chandigarh- (India)",
+    feedback: `After a painful breakup, I never thought I’d get a second chance with my ex. Baba Ji’s positive energy and Vashikaran solutions brought us back together. Not only did we reconnect, but we’re now planning a future together. I’ll always be thankful for his help during my darkest time`,
+    image: Ellipse63,
+  },
+  {
+    name: "JMeena D",
+    location: "Hyderabad - (India)",
+    feedback: `I was constantly falling ill and struggling with stress. No medical tests found anything serious, but I still felt weak. Shiv Aghori Baba Ji identified the astrological reasons behind my health issues and gave me personalized remedies. Within weeks, I felt healthier, calmer, and more balanced. His guidance changed my life`,
     image: Ellipse61,
   },
 ];
 
 const TestimonialsSection = () => {
-  const itemsPerPage = 3;
-  const totalPages = Math.ceil(testimonials.length / itemsPerPage);
-  const [pageIndex, setPageIndex] = useState(0);
+  const [cardsToShow, setCardsToShow] = useState(1);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextPage = () => {
-    setPageIndex((prev) => (prev + 1) % totalPages);
+  // Set responsive card count
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      const width = window.innerWidth;
+      if (width < 640) {
+        setCardsToShow(1);
+      } else if (width < 1024) {
+        setCardsToShow(2);
+      } else {
+        setCardsToShow(3);
+      }
+    };
+
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+    return () => window.removeEventListener("resize", updateCardsToShow);
+  }, []);
+
+  const totalSlides = Math.ceil(testimonials.length / cardsToShow);
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
   };
 
-  const paginatedTestimonials = testimonials.slice(
-    pageIndex * itemsPerPage,
-    pageIndex * itemsPerPage + itemsPerPage
-  );
+  const getVisibleTestimonials = () => {
+    const start = currentIndex * cardsToShow;
+    return testimonials.slice(start, start + cardsToShow);
+  };
 
   return (
-    <section className="bg-gradient-to-br from-[#fff6e5] to-white py-20 px-4 ibarra-real-nova" id='test6'>
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-lg text-[#FFC107] mb-2 tracking-widest font-semibold">Testimonials</h2>
-        <h1 className="text-4xl md:text-6xl text-black mb-6 leading-tight">
+    <div className="w-full max-w-6xl mx-auto p-4 ibarra-real-nova">
+      <div className="relative overflow-hidden">
+        <h2 className="text-lg text-[#FFC107] mb-2 tracking-widest font-semibold text-center">
+          Testimonials
+        </h2>
+        <h1 className="text-4xl md:text-6xl text-black mb-6 leading-tight text-center">
           What Our Clients <span className="text-[#FFC107]">Say's</span>
         </h1>
-        <p className="text-gray-700 mb-14 max-w-2xl mx-auto text-lg">
-          Astrologer Kinaram Baba Ji has transformed the lives of over <strong>98,000+</strong> clients with his spiritual insight and powerful remedies.
+        <p className="text-gray-700 mb-14 max-w-2xl mx-auto text-lg text-center">
+        Shiv Aghori Baba Ji has transformed the lives of over{" "}
+          <strong>98,000+</strong> clients with his spiritual insight and
+          powerful remedies.
         </p>
 
-        {/* Carousel Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {paginatedTestimonials.map((testimonial, index) => (
+        <div className="flex flex-wrap justify-center gap-4 transition-all duration-500">
+          {getVisibleTestimonials().map((testimonial, index) => (
             <div
               key={index}
-              onClick={nextPage}
-              className="bg-[#390C05] cursor-pointer backdrop-blur-lg border border-[#FFC107]/30 rounded-3xl shadow-lg p-8 transition-transform transform hover:scale-105 hover:shadow-2xl duration-300"
+              className="w-full sm:w-[48%] lg:w-[32%] bg-[#390C05] text-white shadow-lg rounded-xl p-6 flex flex-col items-center justify-center text-center space-y-4"
             >
-              <div className="flex justify-center mb-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-20 h-20 rounded-full object-cover ring-2 ring-white"
-                />
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="w-20 h-20 rounded-full object-cover border-4 border-gray-300"
+              />
+              <p className="">"{testimonial.feedback}"</p>
+              <div>
+                <p className="font-semibold">{testimonial.name}</p>
+                <p className="text-sm">{testimonial.location}</p>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-1">{testimonial.name}</h3>
-              <p className="text-sm text-white font-medium mb-4">{testimonial.location}</p>
-              <p className="text-white text-sm leading-relaxed">
-                “{testimonial.feedback}”
-              </p>
             </div>
           ))}
         </div>
 
-        {/* Dots for Navigation */}
-        <div className="mt-12 flex justify-center flex-wrap gap-3">
-          {Array.from({ length: totalPages }).map((_, index) => (
-            <div
+        {/* Dots */}
+        <div className="flex justify-center mt-6 space-x-2">
+          {Array.from({ length: totalSlides }).map((_, index) => (
+            <button
               key={index}
-              onClick={() => setPageIndex(index)}
-              className={`w-4 h-4 rounded-full cursor-pointer transition-all duration-300 transform ${
-                index === pageIndex
-                  ? 'bg-[#390C05] scale-125 ring-2 ring-[#FFC107]'
-                  : 'bg-gray-300'
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-colors cursor-pointer duration-300 ${
+                index === currentIndex ? "bg-black" : "bg-gray-400"
               }`}
-            />
+            ></button>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

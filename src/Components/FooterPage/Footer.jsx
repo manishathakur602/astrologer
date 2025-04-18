@@ -8,7 +8,7 @@ function Footer() {
         {/* Logo Section */}
         <div className="flex flex-col items-start text-left">
           <h1 className="text-6xl text-[#450B00] mb-4">Logo</h1>
-          <p className="text-lg text-[#450B00]">Astrologer Kinaram Baba Ji is a well-known astrologer who encourages people to use astrology for good purposes.</p>
+          <p className="text-lg text-[#450B00]">Shiv Aghori Baba Ji is a well-known astrologer who encourages people to use astrology for good purposes.</p>
         </div>
 
         {/* Services */}

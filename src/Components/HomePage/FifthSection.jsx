@@ -11,14 +11,14 @@ function FifthSection() {
                 <img src={image} alt='' />
                 <FirstChunk image={image3} />
             </div>
-            <SecondChunk name1="About Us" name2="Famous Astrologer" name3="Astrologer Name" para="Astrology has been an integral part of human civilization for centuries. People have
-          always looked towards the stars and celestial bodies to seek answers about their lives,
-          destinies, and the world around them. In this article, we will delve into the world of
-          astrology and discover the brilliance of one of the finest astrologers, Kinaram Baba Ji.
-          With his profound knowledge and expertise, he has guided countless individuals on their
-          journey towards self-discovery and finding harmony in life. In this brief article, we
-          will explore how Kinaram Baba Ji has become one of the best astrologers and how his
-          guidance can illuminate your path as well." />
+            <SecondChunk name1="About Us" name2="Famous Astrologer" name3="Shiv Aghori Baba Ji" para="Welcome to the official website of Shiv Aghori Baba Ji, one of India’s leading
+             astrologers with over 27 years of expertise in solving love, marriage, and
+             relationship issues. We offer trusted astrology solutions to help you overcome
+             life's challenges, bringing peace, love, and happiness into your life.
+             With a track record of over 98,000 satisfied clients globally, we specialize in
+             delivering quick, effective, and personalized remedies. Whether you're facing
+             love problems, marital conflicts, or career challenges, we provide result-driven
+            solutions that bring lasting results. " />
     </div>
   )
 }
