@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+.ibarra-real-nova{
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /* .active{
+  
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+  } */
